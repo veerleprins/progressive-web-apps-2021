@@ -1,0 +1,22 @@
+{
+  "name": "progressive-web-apps-2021",
+  "version": "1.0.0",
+  "description": "Application for horror movie info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veerleprins/progressive-web-apps-2021.git"
+  },
+  "author": "Veerle Prins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veerleprins/progressive-web-apps-2021/issues"
+  },
+  "homepage": "https://github.com/veerleprins/progressive-web-apps-2021#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
