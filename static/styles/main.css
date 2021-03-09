@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+
+:root {
+  --primary: #e7e7e7;
+  --secondary: #000;
+  --posters: #323232;
+  --gradient-1: #002265;
+  --gradient-2: #7b0000;
+  --dark-red: #3f0000;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+html {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+h1,
+h2 {
+  font-family: "Girassol", cursive;
+}
+
+/*******************************************************
+                        FOOTER:
+********************************************************/
+
+footer {
+  display: flex;
+  background-color: var(--secondary);
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgb(96, 96, 96);
+  width: 100%;
+  max-height: 180px;
+  padding: 1.5em 1em;
+  margin-top: 2em;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section p {
+  text-align: center;
+}
+
+footer section a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+footer section a:hover {
+  color: #01b4e4;
+}
+
+footer section a img {
+  width: 200px;
+  margin: 1em;
+}
