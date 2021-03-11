@@ -7,12 +7,11 @@ require("dotenv").config();
 const routes = require("./router/routes");
 
 // Internals
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.set("view engine", "ejs");
 app.use(express.static("static"));
-
 app.use("/", routes);
 
 app.listen(PORT, () => {

@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include ("partials/head.ejs") %>
-    <title>Home | HorrorInfo</title>
-  </head>
+  <%- include ("partials/head.ejs") %>
 
-  <body>
+  <body class="movie-page">
     <header>
-      <section>
-        <h1>What kind of horror are you looking for?</h1>
-        <div>
-          <input type="text" placeholder="Search movies..." />
-        </div>
-      </section>
+      <h1><%=movie.original_title%></h1>
+      <a href="/">Back</a>
     </header>
     <main>
       <section>
-        <h2>Discover horrors:</h2>
-        <ul></ul>
+        <img
+          src="https://image.tmdb.org/t/p/w342/<%=movie.poster_path%>"
+          alt="Poster of the movie: <%=movie.original_title%>"
+        />
+        <article>
+          <h2><%=movie.tagline%></h2>
+          <h3>Description:</h3>
+          <p><%=movie.overview%></p>
+          <h3>Watch on:</h3>
+          <ul>
+            <%providers %>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h3>Voting:</h3>
+            <p><%=movie.vote_average%></p>
+          </div>
+          <div>
+            <h3>Vote Count:</h3>
+            <p><%=movie.vote_count%></p>
+          </div>
+          <div>
+            <h3>Status:</h3>
+            <p><%=movie.status%></p>
+          </div>
+          <div>
+            <h3>Release Date:</h3>
+            <p><%=movie.release_date%></p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h2>Recommendations:</h2>
+        <ul>
+          <%recommendations.forEach((recommended) => {%>
+          <li>
+            <a href="/movies/<%= recommended.id %>">
+              <img
+                src="https://image.tmdb.org/t/p/w342/<%=recommended.poster%>"
+                alt="Poster of the movie: <%=recommended.title%>"
+              />
+              <h3><%=recommended.title%></h3>
+            </a>
+          </li>
+          <% }) %>
+        </ul>
       </section>
     </main>
     <%- include ("partials/footer.ejs") %>

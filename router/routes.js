@@ -1,25 +1,18 @@
-// Externals
 const express = require("express");
-const router = express();
-
-// Modules
-const fetchData = require("../modules/collecting/collect");
+const router = express.Router();
+const bodyParser = require("body-parser");
+const urlencodedParser = bodyParser.urlencoded({ extended: true });
 
 // Functions
-const home = async (req, res) => {
-  const data = await fetchData(
-    `discover/movie`,
-    `&with_genres=27&without_genres=35%2C14%2C18%2C28&page=1`
-  );
-  res.render("index.ejs", { movies: data.results });
-};
-
-const error = (req, res) => {
-  res.status(404).render("404");
-};
+const { home } = require("./renders/home");
+const { movie } = require("./renders/movie");
+const { search } = require("./renders/search");
+const { error } = require("./renders/error");
 
 // Routes
 router.get("/", home);
+router.get("/:id", movie);
+router.post("/", urlencodedParser, search);
 router.get("/*", error);
 
 module.exports = router;

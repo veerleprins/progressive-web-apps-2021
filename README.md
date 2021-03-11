@@ -116,4 +116,14 @@ This repo is licensed as [MIT]() by :copyright: [Veerle Prins](https://github.co
 
 <!-- Resources
 https://www.npmjs.com/package/dotenv
+https://www.youtube.com/watch?v=pP4kjXykbio
+https://www.npmjs.com/package/node-fetch
+https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file
+https://www.npmjs.com/package/ejs
+https://developers.sap.com/tutorials/cp-node-create-basic-app.html
+https://nodejs.org/en/
+https://www.youtube.com/watch?v=zW_tZR0Ir3Q&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&index=12&ab_channel=TheNetNinja
+https://stackoverflow.com/questions/12160668/how-to-get-the-id-from-the-url-while-using-node-js/12161020#12161020
+https://www.npmjs.com/package/body-parser
+
  -->
