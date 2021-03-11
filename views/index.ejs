@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include ("partials/head.ejs") %>
-    <title>Home | HorrorInfo</title>
-  </head>
-
-  <body>
-    <header>
-      <section>
-        <h1>What kind of horror are you looking for?</h1>
-        <div>
-          <input type="text" placeholder="Search movies..." />
-        </div>
-      </section>
-    </header>
+  <%- include ("partials/head.ejs") %>
+  <body class="home-page">
+    <%- include ("partials/header.ejs") %>
     <main>
       <section>
         <h2>Discover horrors:</h2>
         <ul>
           <% movies.forEach((movie) => { %>
           <li>
-            <a href="#">
+            <a href="/<%= movie.id %>">
               <img
-                src="https://image.tmdb.org/t/p/w342/<%=movie.poster_path%>"
-                alt="Poster of the movie: <%= movie.original_title %>"
+                src="https://image.tmdb.org/t/p/w342/<%=movie.poster%>"
+                alt="Poster of the movie: <%= movie.title %>"
               />
-              <h3><%= movie.original_title %></h3>
+              <h3><%= movie.title %></h3>
             </a>
           </li>
           <% }); %>
