@@ -29,4 +29,4 @@ const movie = async (req, res, next) => {
   }
 };
 
-module.exports = { movie };
+module.exports = movie;

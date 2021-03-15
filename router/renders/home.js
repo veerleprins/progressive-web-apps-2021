@@ -23,4 +23,4 @@ const home = async (req, res, next) => {
   }
 };
 
-module.exports = { home };
+module.exports = home;

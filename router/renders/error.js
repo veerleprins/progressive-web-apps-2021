@@ -6,4 +6,4 @@ const error = (req, res) => {
   }
 };
 
-module.exports = { error };
+module.exports = error;
