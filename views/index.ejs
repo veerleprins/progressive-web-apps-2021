@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <%- include ("partials/head.ejs") %>
-  <body class="home-page">
-    <%- include ("partials/header.ejs") %>
-    <main>
-      <section>
-        <h2>Discover horrors:</h2>
-        <ul>
-          <% movies.forEach((movie) => { %>
-          <li>
-            <a href="/<%= movie.id %>">
-              <img
-                src="https://image.tmdb.org/t/p/w342/<%=movie.poster%>"
-                alt="Poster of the movie: <%= movie.title %>"
-              />
-              <h3><%= movie.title %></h3>
-            </a>
-          </li>
-          <% }); %>
-        </ul>
-      </section>
-    </main>
-    <%- include ("partials/footer.ejs") %>
-  </body>
-</html>
+<body class="home-page">
+  <%- include ("partials/header.ejs") %>
+  <main>
+    <section>
+      <h2>Discover horrors:</h2>
+      <ul>
+        <% movies.forEach((movie) => { %>
+        <li>
+          <a href="/movies/<%= movie.id %>">
+            <img
+              src="https://image.tmdb.org/t/p/w342/<%=movie.poster%>"
+              alt="Poster of the movie: <%= movie.title %>"
+            />
+            <h3><%= movie.title %></h3>
+          </a>
+        </li>
+        <% }); %>
+      </ul>
+    </section>
+  </main>
+  <%- include ("partials/footer.ejs") %>
+</body>
