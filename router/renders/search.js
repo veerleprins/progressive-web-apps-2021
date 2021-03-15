@@ -18,7 +18,11 @@ const search = async (req, res, next) => {
         );
       });
       const cleanedData = clean.getNecessary(data);
-      res.render("index.ejs", { movies: cleanedData, pageTitle: "Home" });
+      res.render("index.ejs", {
+        movies: cleanedData,
+        pageTitle: "Home",
+        styleLink: "/styles/main.css",
+      });
     }
   } catch (err) {
     next(err);
