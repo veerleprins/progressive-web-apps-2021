@@ -1,5 +1,8 @@
-const fetch = require("node-fetch");
+// Externals
 require("dotenv").config();
+
+// Modules
+const fetch = require("node-fetch");
 
 const fetchData = async (term, params) => {
   try {
@@ -9,7 +12,7 @@ const fetchData = async (term, params) => {
     const response = await fetch(endpoint);
     return await response.json();
   } catch (err) {
-    console.log(err);
+    next(err);
   }
 };
 

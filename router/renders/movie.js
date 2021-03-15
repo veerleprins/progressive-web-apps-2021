@@ -23,10 +23,11 @@ const movie = async (req, res, next) => {
       recommendations: cleanRecommended,
       providers: cleanProviders,
       pageTitle: "Movie",
+      styleLink: "../styles/main.css"
     });
   } catch (err) {
     next(err);
   }
 };
 
-module.exports = { movie };
+module.exports = movie;
