@@ -1,5 +1,6 @@
 // Externals
 const express = require("express");
+const expressLayouts = require("express-ejs-layouts");
 const app = express();
 require("dotenv").config();
 
@@ -10,10 +11,12 @@ const routes = require("./router/routes");
 const PORT = process.env.PORT || 4000;
 
 // Middleware
+app.use(express.static("static"));
+app.use(expressLayouts);
 app.set("view engine", "ejs");
 app.set("views", "views");
+app.set("layout", "./layouts/layout");
 
-app.use(express.static("static"));
 app.use(routes);
 
 app.listen(PORT, () => {
