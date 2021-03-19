@@ -130,5 +130,6 @@ https://www.npmjs.com/package/express-ejs-layouts
 https://stackoverflow.com/questions/49539306/firefox-service-worker-securityerror-domexception-the-operation-is-insecure
 https://www.awwwards.com/PWA-ebook/en#foreword
 https://developers.google.com/web/fundamentals/primers/service-workers/
-
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+https://www.youtube.com/watch?v=ksXwaWHCW6k
  -->

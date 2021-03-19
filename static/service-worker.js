@@ -10,6 +10,7 @@ const CACHE_ASSETS = [
 // Call Install Event:
 self.addEventListener("install", (event) => {
   console.log("Service Worker: Installed");
+  self.skipWaiting();
 
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -35,5 +36,14 @@ self.addEventListener("activate", (event) => {
         })
       );
     })
+  );
+});
+
+// Call Fetch Event
+self.addEventListener("fetch", (event) => {
+  console.log("Service Worker: Fetching");
+
+  event.respondWith(
+    fetch(event.request).catch(() => caches.match(event.request))
   );
 });
