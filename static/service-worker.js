@@ -1,5 +1,7 @@
+// Cache version
 const CACHE_NAME = "cache-v1";
 
+// The assets
 const CACHE_ASSETS = [
   "/",
   "/offline/",
