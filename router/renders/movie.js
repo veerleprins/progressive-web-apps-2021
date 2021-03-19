@@ -22,8 +22,7 @@ const movie = async (req, res, next) => {
       movie: movieData,
       recommendations: cleanRecommended,
       providers: cleanProviders,
-      pageTitle: "Movie",
-      styleLink: "../styles/main.css"
+      pageTitle: "Movie"
     });
   } catch (err) {
     next(err);

@@ -20,8 +20,7 @@ const search = async (req, res, next) => {
       const cleanedData = clean.getNecessary(data);
       res.render("index.ejs", {
         movies: cleanedData,
-        pageTitle: "Home",
-        styleLink: "/styles/main.css",
+        pageTitle: "Home"
       });
     }
   } catch (err) {

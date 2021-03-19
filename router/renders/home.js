@@ -22,8 +22,7 @@ const home = async (req, res, next) => {
     // Rendering the page:
     res.render("index.ejs", {
       movies: data,
-      pageTitle: "Home",
-      styleLink: "/styles/main.css",
+      pageTitle: "Home"
     });
   } catch (err) {
     next(err);
