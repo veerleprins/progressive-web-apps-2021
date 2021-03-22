@@ -4,7 +4,9 @@ const clean = require("../../modules/cleaning/clean");
 
 const movie = async (req, res, next) => {
   try {
+    // Internals:
     const ID = req.params.id;
+
     // Fetch all data:
     const movieData = await fetchData(`movie/${ID}`, ``);
     const recommendedData = await fetchData(`movie/${ID}/recommendations`, ``);
@@ -18,11 +20,12 @@ const movie = async (req, res, next) => {
       .getNecessary(recommendedData.results)
       .slice(0, 5);
 
+    // Render the page:
     res.render("movie.ejs", {
       movie: movieData,
       recommendations: cleanRecommended,
       providers: cleanProviders,
-      pageTitle: "Movie"
+      pageTitle: "Movie",
     });
   } catch (err) {
     next(err);

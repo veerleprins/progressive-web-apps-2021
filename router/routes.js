@@ -4,7 +4,7 @@ const router = express.Router();
 const bodyParser = require("body-parser");
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
 
-// Functions
+// Renders
 const home = require("./renders/home");
 const movie = require("./renders/movie");
 const search = require("./renders/search");
