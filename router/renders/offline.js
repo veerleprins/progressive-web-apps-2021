@@ -1,6 +1,6 @@
 const offline = async (req, res, next) => {
   try {
-    // Rendering the page:
+    // Render the page:
     res.render("offline.ejs", {
       pageTitle: "Offline...",
     });

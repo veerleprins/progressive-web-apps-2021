@@ -14,7 +14,6 @@ const PORT = process.env.PORT || 4000;
 app.use(express.static("static"));
 app.use(expressLayouts);
 app.set("view engine", "ejs");
-app.set("views", "views");
 app.set("layout", "./layouts/layout");
 
 app.use(routes);

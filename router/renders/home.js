@@ -19,10 +19,11 @@ const home = async (req, res, next) => {
     const required = clean.getNecessary(merged);
     const sorted = clean.sortArray(required, "avgVoted");
     const data = clean.filterItem(sorted, "voted").slice(0, 10);
-    // Rendering the page:
+
+    // Render the page:
     res.render("index.ejs", {
       movies: data,
-      pageTitle: "Home"
+      pageTitle: "Home",
     });
   } catch (err) {
     next(err);

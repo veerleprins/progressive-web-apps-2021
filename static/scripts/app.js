@@ -1,9 +1,13 @@
-// Check if service workers are supported
+// Check if service workers are supported:
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/service-worker.js")
-      .then((reg) => console.log(`Service Worker: Registered on: ${reg.scope}`))
-      .catch((err) => console.log(`Service Worker: Error: ${err}`));
-  });
+  const registerServiceWorker = async () => {
+    try {
+      const sw = navigator.serviceWorker;
+      const registration = await sw.register("/service-worker.js");
+      console.log(`Service Worker Registered ${registration}`);
+    } catch (err) {
+      console.error(`Service Worker registration Failed: ${err}`);
+    }
+  };
+  registerServiceWorker();
 }
