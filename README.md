@@ -158,7 +158,7 @@ The sources I've used to create this web application:
 
 - Google, Microsoft, & Awwwards. (z.d.). Progressive Web Apps The future of Mobile Web - Awwwards. Progressive Web Apps The future of the Mobile Web. Geraadpleegd op 16 maart 2021, van https://www.awwwards.com/PWA-ebook/en
 - Google, & Gaunt, M. (2020, 24 juli). Service Workers: an Introduction | Web Fundamentals. Google Developers. https://developers.google.com/web/fundamentals/primers/service-workers/
--
+- The Net Ninja. (2019, 6 mei). PWA Tutorial for Beginners #1 - What Are PWA’s? [Video]. YouTube. https://www.youtube.com/watch?v=4XT23X0Fjfk&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=1&ab_channel=TheNetNinja
 
 ### Illustrations:
 
