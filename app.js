@@ -11,7 +11,7 @@ const routes = require("./router/routes");
 const PORT = process.env.PORT || 4000;
 
 // Middleware
-app.use(express.static("static"));
+app.use(express.static("dist"));
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 app.set("layout", "./layouts/layout");
