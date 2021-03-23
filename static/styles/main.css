@@ -77,7 +77,7 @@ h2 {
 .home-page header {
   height: 45vh;
   background: var(--secondary);
-  background-image: url("../images/header-img.jpg");
+  background-image: url("images/header-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
