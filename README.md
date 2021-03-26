@@ -173,6 +173,7 @@ The sources I've used to create this web application:
 - Wayne, A. [alex-wayne]. (2015, 2 june). Return only numbers from string [StackOverflow Post]. Stack Overflow. https://stackoverflow.com/questions/30607419/return-only-numbers-from-string
 - Steve Griffith. (2020, 22 januari). How to Export and Require Modules in NodeJS [Video]. YouTube. https://www.youtube.com/watch?v=pP4kjXykbio
 - nodejs (14.16.0). (2020). [Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.]. Nodejs. https://nodejs.org/en/
+- freeCodeCamp.org. (2018, 24 juli). Gulp Task Automation for Beginners [Video]. YouTube. https://www.youtube.com/watch?v=LYbt50dhTko&t=352s&ab_channel=freeCodeCamp.org
 
 ### Service worker:
 
