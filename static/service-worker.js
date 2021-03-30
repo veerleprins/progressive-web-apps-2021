@@ -2,14 +2,6 @@
 const staticCacheName = "site-static-v1";
 const dynamicCacheName = "site-dynamic-v1";
 const assets = ["/", "/offline", "styles/index.css"];
-// const assets = [
-//   "/",
-//   // "/offline",
-//   // "/styles/index.css",
-//   // "https://kit.fontawesome.com/229b7397fb.js",
-//   // "https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap",
-//   // "https://fonts.googleapis.com/css2?family=Girassol&display=swap",
-// ];
 
 self.addEventListener("install", (event) => {
   // Service Worker: Installed.
