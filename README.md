@@ -158,6 +158,7 @@ The sources I've used to create this web application:
 - gulp-concat (2.6.1). (2017). [Concatenates files.]. npmjs. https://www.npmjs.com/package/gulp-concat
 - gulp-clean-css (4.3.0). (2020). [Gulp plugin to minify CSS.]. npmjs. https://www.npmjs.com/package/gulp-clean-css
 - gulp-uglify (3.0.2). (2019). [Minify JavaScript files.]. npmjs. https://www.npmjs.com/package/gulp-uglify
+<!-- - https://github.com/kimmobrunfeldt/chokidar-cli -->
 
 ### Code:
 
@@ -174,6 +175,7 @@ The sources I've used to create this web application:
 - Steve Griffith. (2020, 22 januari). How to Export and Require Modules in NodeJS [Video]. YouTube. https://www.youtube.com/watch?v=pP4kjXykbio
 - nodejs (14.16.0). (2020). [Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.]. Nodejs. https://nodejs.org/en/
 - freeCodeCamp.org. (2018, 24 juli). Gulp Task Automation for Beginners [Video]. YouTube. https://www.youtube.com/watch?v=LYbt50dhTko&t=352s&ab_channel=freeCodeCamp.org
+<!-- - https://docs.divio.com/en/latest/how-to/node-express-force-https/ -->
 
 ### Service worker:
 
@@ -207,3 +209,12 @@ https://web.dev/add-manifest/
 https://flaviocopes.com/how-to-save-json-object-to-file-nodejs/
 
  -->
+
+<!--
+
+https://betterprogramming.pub/10-critical-performance-optimization-steps-you-should-take-b560a3fcf658
+https://www.npmjs.com/package/gulp-rev
+https://www.npmjs.com/package/compression
+
+
+https://github.com/jochemvogel/progressive-web-apps-2021 -->
