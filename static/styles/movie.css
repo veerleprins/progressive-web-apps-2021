@@ -1,4 +1,78 @@
 /*******************************************************
+                  MOVIE HEADER:
+********************************************************/
+
+.movie-page header {
+  background-color: var(--secondary);
+  position: relative;
+  padding: 2em 4em;
+  margin-bottom: 5em;
+}
+
+.movie-page header a {
+  position: relative;
+  top: 40px;
+  left: 0;
+  background-color: var(--posters);
+  font-family: "Girassol", cursive;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.5em;
+  padding-left: 30px;
+  padding: 10px 35px 10px 25px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.movie-page header a::before {
+  --width: 25px;
+  content: "\f053";
+  font-family: FontAwesome;
+  display: inline-block;
+  left: 10px;
+  width: var(--width);
+  height: var(--width);
+}
+
+.movie-page header a:hover {
+  color: var(--gradient-2);
+  background-color: var(--primary);
+}
+
+.movie-page header::before,
+.movie-page header::after {
+  content: "";
+  background-image: url("../images/scratch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 4em;
+  height: 4em;
+}
+
+.movie-page header::before {
+  transform: rotate(-180deg);
+  left: 3em;
+  bottom: 3em;
+}
+
+.movie-page header::after {
+  top: 1em;
+  right: 3em;
+}
+
+.movie-page header h1 {
+  background-color: #191919;
+  text-align: center;
+  color: #892417;
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  padding: 0.5em;
+}
+
+/*******************************************************
                     MOVIE MAIN:
 ********************************************************/
 
