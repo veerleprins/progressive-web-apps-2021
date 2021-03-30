@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
+    "watch": "chokidar 'static/**/*.{js,css,png,svg}' -c 'npm run build'",
     "build": "npm-run-all build:static:* && npm run build:static",
     "build:static": "node scripts/buildStatic.js",
     "build:static:img": "node scripts/buildIMG.js",
@@ -31,6 +32,7 @@
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
+    "chokidar-cli": "^2.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
