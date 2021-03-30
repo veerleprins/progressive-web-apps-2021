@@ -1,3 +1,4 @@
+# Assignment files
 assignment/
 
 # Dependency directories
@@ -8,4 +9,4 @@ node_modules/
 .env.test
 
 # Deploying
-Procfile
+dist/

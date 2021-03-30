@@ -49,6 +49,22 @@ There are a number of packages that have been downloaded for creating this appli
 
 The package [**nodemon**](https://www.npmjs.com/package/nodemon) is installed in the developer dependencies. Nodemon is a tool to ensure that the server is automatically restarted after changes have been made to one of the files. It helps the developer, among other things, by keeping an eye on whether there are changes that could cause possible bugs.
 
+#### gulp
+
+The package [**gulp**](https://www.npmjs.com/package/gulp) is a kind of toolkit with which various tasks can be performed automatically. The reason this package has been downloaded is because it helps perform various tasks (using the `.pipe()` that is built in) and is a simple but straightforward package.
+
+#### gulp-concat
+
+The [**gulp-concat**](https://www.npmjs.com/package/gulp-concat) package merges several files and saves them in a new file. The reason why this package has been downloaded is because different files can be created in this way (such as different CSS files) and then link them together again.
+
+#### gulp-clean-css
+
+The package [**gulp-clean-css**](https://www.npmjs.com/package/gulp-clean-css) ensures that the CSS code is minified. The reason why this package is installed is to be able to minify the CSS.
+
+#### gulp-uglify
+
+The package [**gulp-uglify**](https://www.npmjs.com/package/gulp-uglify) actually works the same as the package gulp-css-clean, but for javascript files. The reason this package is installed is to minify the javascript file.
+
 ### Dependencies
 
 #### express
@@ -69,7 +85,7 @@ The package [**dotenv**](https://www.npmjs.com/package/dotenv) is a kind of modu
 
 #### body-parser
 
-Het pakketje [**body-parser**](https://www.npmjs.com/package/body-parser) zorgt er voor dat de inkomende aanvragen uitgelezen kunnen worden in Nodejs onder de `req.body`. The reason why this package was downloaded is because it allows the input from the search bar to be read.
+The package [**body-parser**](https://www.npmjs.com/package/body-parser) ensures that the incoming requests can be read in Nodejs under the `req.body`. The reason why this package was downloaded is because it allows the input from the search bar to be read.
 
 #### node-fetch
 
@@ -138,6 +154,11 @@ The sources I've used to create this web application:
 - body-parser (1.19.0). (2019). [Parse incoming request bodies in a middleware before your handlers, available under the req.body property.]. npmjs. https://www.npmjs.com/package/body-parser
 - dotenv (8.2.0). (2020). [Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.]. npmjs. https://www.npmjs.com/package/dotenv
 - node-fetch (2.6.1). (2021). [A light-weight module that brings window.fetch to Node.js]. npmjs. https://www.npmjs.com/package/node-fetch
+- gulp (4.0.2). (2019). [Gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow.]. npmjs. https://www.npmjs.com/package/gulp
+- gulp-concat (2.6.1). (2017). [Concatenates files.]. npmjs. https://www.npmjs.com/package/gulp-concat
+- gulp-clean-css (4.3.0). (2020). [Gulp plugin to minify CSS.]. npmjs. https://www.npmjs.com/package/gulp-clean-css
+- gulp-uglify (3.0.2). (2019). [Minify JavaScript files.]. npmjs. https://www.npmjs.com/package/gulp-uglify
+<!-- - https://github.com/kimmobrunfeldt/chokidar-cli -->
 
 ### Code:
 
@@ -153,6 +174,8 @@ The sources I've used to create this web application:
 - Wayne, A. [alex-wayne]. (2015, 2 june). Return only numbers from string [StackOverflow Post]. Stack Overflow. https://stackoverflow.com/questions/30607419/return-only-numbers-from-string
 - Steve Griffith. (2020, 22 januari). How to Export and Require Modules in NodeJS [Video]. YouTube. https://www.youtube.com/watch?v=pP4kjXykbio
 - nodejs (14.16.0). (2020). [Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.]. Nodejs. https://nodejs.org/en/
+- freeCodeCamp.org. (2018, 24 juli). Gulp Task Automation for Beginners [Video]. YouTube. https://www.youtube.com/watch?v=LYbt50dhTko&t=352s&ab_channel=freeCodeCamp.org
+<!-- - https://docs.divio.com/en/latest/how-to/node-express-force-https/ -->
 
 ### Service worker:
 
@@ -186,3 +209,12 @@ https://web.dev/add-manifest/
 https://flaviocopes.com/how-to-save-json-object-to-file-nodejs/
 
  -->
+
+<!--
+
+https://betterprogramming.pub/10-critical-performance-optimization-steps-you-should-take-b560a3fcf658
+https://www.npmjs.com/package/gulp-rev
+https://www.npmjs.com/package/compression
+
+
+https://github.com/jochemvogel/progressive-web-apps-2021 -->
