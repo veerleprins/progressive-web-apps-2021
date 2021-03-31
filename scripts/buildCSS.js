@@ -1,6 +1,6 @@
 // Externals
 const gulp = require("gulp");
-const concat = require("gulp-concat"); // Stick together
+const concat = require("gulp-concat");
 const minify = require("gulp-clean-css");
 
 return gulp
