@@ -1,10 +1,5 @@
 ## HorrorInfo:
 
-Todo:
-
-- Vertellen wat je gedaan hebt
-  Bronnen toevoegen (hoeven er geen 120 te zijn, 5 is prima , anders ben jer hier weer jaren mee bezig)
-
 <img width="800" alt="Mockup on Apple computer with screenshot of the application." src="https://user-images.githubusercontent.com/35265583/109638652-8db44800-7b4e-11eb-9b61-b6a4aa04974d.png">
 
 ## :black_nib: Short Description
@@ -237,7 +232,8 @@ The sources I've used to create this web application:
 - gulp-concat (2.6.1). (2017). [Concatenates files.]. npmjs. https://www.npmjs.com/package/gulp-concat
 - gulp-clean-css (4.3.0). (2020). [Gulp plugin to minify CSS.]. npmjs. https://www.npmjs.com/package/gulp-clean-css
 - gulp-uglify (3.0.2). (2019). [Minify JavaScript files.]. npmjs. https://www.npmjs.com/package/gulp-uglify
-<!-- - https://github.com/kimmobrunfeldt/chokidar-cli -->
+- K. (z.d.). kimmobrunfeldt/chokidar-cli. GitHub. Geraadpleegd op 26 maart 2021, van https://github.com/kimmobrunfeldt/chokidar-cli
+- compression (1.7.4). (2019). [Compress files]. npmjs. https://www.npmjs.com/package/compression
 
 ### Code:
 
@@ -254,13 +250,17 @@ The sources I've used to create this web application:
 - Steve Griffith. (2020, 22 januari). How to Export and Require Modules in NodeJS [Video]. YouTube. https://www.youtube.com/watch?v=pP4kjXykbio
 - nodejs (14.16.0). (2020). [Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.]. Nodejs. https://nodejs.org/en/
 - freeCodeCamp.org. (2018, 24 juli). Gulp Task Automation for Beginners [Video]. YouTube. https://www.youtube.com/watch?v=LYbt50dhTko&t=352s&ab_channel=freeCodeCamp.org
-<!-- - https://docs.divio.com/en/latest/how-to/node-express-force-https/ -->
+- How to force HTTPS with Express.js - Developer Handbook Documentation. (z.d.). docs divio. Geraadpleegd op 28 maart 2021, van https://docs.divio.com/en/latest/how-to/node-express-force-https/
+- Almasi, F. (2020, 9 september). 10 Critical Performance Optimization Steps You Should Take. Medium. https://betterprogramming.pub/10-critical-performance-optimization-steps-you-should-take-b560a3fcf658
+- RaddyTheBrand. (2020, 20 augustus). Node.js Express EJS Layouts and Partials Tutorial [Video]. YouTube. https://www.youtube.com/watch?v=lYVKbAn5Od0
 
 ### Service worker:
 
 - Google, Microsoft, & Awwwards. (z.d.). Progressive Web Apps The future of Mobile Web - Awwwards. Progressive Web Apps The future of the Mobile Web. Geraadpleegd op 16 maart 2021, van https://www.awwwards.com/PWA-ebook/en
 - Google, & Gaunt, M. (2020, 24 juli). Service Workers: an Introduction | Web Fundamentals. Google Developers. https://developers.google.com/web/fundamentals/primers/service-workers/
 - The Net Ninja. (2019, 6 mei). PWA Tutorial for Beginners #1 - What Are PWA’s? [Video]. YouTube. https://www.youtube.com/watch?v=4XT23X0Fjfk&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=1&ab_channel=TheNetNinja
+- Add a web app manifest. (z.d.). Web.Dev. Geraadpleegd op 24 maart 2021, van https://web.dev/add-manifest/
+- Posnick, J. (z.d.). Service Worker Registration | Web Fundamentals |. Google Developers. Geraadpleegd op 26 maart 2021, van https://developers.google.com/web/fundamentals/primers/service-workers/registration
 
 ### Illustrations:
 
@@ -269,31 +269,3 @@ The sources I've used to create this web application:
 ## :lock: License
 
 This repo is licensed as [MIT](https://github.com/veerleprins/progressive-web-apps-2021/blob/master/LICENSE) by :copyright: [Veerle Prins](https://github.com/veerleprins), 2020
-
-<!-- Resources
-https://www.youtube.com/watch?v=zW_tZR0Ir3Q&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&index=12&ab_channel=TheNetNinja
-https://stackoverflow.com/questions/12160668/how-to-get-the-id-from-the-url-while-using-node-js/12161020#12161020
-https://www.youtube.com/watch?v=lYVKbAn5Od0
-https://stackoverflow.com/questions/49539306/firefox-service-worker-securityerror-domexception-the-operation-is-insecure
-https://developers.google.com/web/fundamentals/primers/service-workers/
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-https://www.youtube.com/watch?v=ksXwaWHCW6k
-
-
-service worker:
-https://web.dev/offline-cookbook/
-https://developers.google.com/web/fundamentals/primers/service-workers/registration
-https://searchsoftwarequality.techtarget.com/definition/native-application-native-app
-https://web.dev/add-manifest/
-https://flaviocopes.com/how-to-save-json-object-to-file-nodejs/
-
- -->
-
-<!--
-
-https://betterprogramming.pub/10-critical-performance-optimization-steps-you-should-take-b560a3fcf658
-https://www.npmjs.com/package/gulp-rev
-https://www.npmjs.com/package/compression
-
-
-https://github.com/jochemvogel/progressive-web-apps-2021 -->
