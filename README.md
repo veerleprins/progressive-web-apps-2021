@@ -1,7 +1,6 @@
 ## HorrorInfo:
 
 <img width="1658" alt="Screenshot 2021-03-31 at 11 52 11" src="https://user-images.githubusercontent.com/35265583/113126154-a54b2300-9217-11eb-8018-bbd1cd6115da.png">
-<!-- New image -->
 
 ## :black_nib: Short Description
 
