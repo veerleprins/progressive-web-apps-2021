@@ -1,7 +1,11 @@
 ## HorrorInfo:
 
+Todo:
+
+- Vertellen wat je gedaan hebt
+  Bronnen toevoegen (hoeven er geen 120 te zijn, 5 is prima , anders ben jer hier weer jaren mee bezig)
+
 <img width="800" alt="Mockup on Apple computer with screenshot of the application." src="https://user-images.githubusercontent.com/35265583/109638652-8db44800-7b4e-11eb-9b61-b6a4aa04974d.png">
-<!-- MockUp from Figma Plugin -->
 
 ## :black_nib: Short Description
 
@@ -19,9 +23,84 @@ This repository shows a web application about movies with the API from [The Movi
 - [Future features](#small_blue_diamond-future-features)
 - [Sources](#books-sources)
 
-## :small_orange_diamond: Feature
+## :small_orange_diamond: Features
 
 With **Horror Info** you can find information about a specific horror movie. There are horror movies to discover, but you can also search for a horror movie using the search bar. You can also see the number of votings, which is the average, but especially very important: Where you can watch this film in corona time.
+
+### Scripts
+
+To ensure that a developer does not always have to view or check all his code himself before building a website, there are NPM packages that can be installed and used for build scripts. These NPM packages can, for example, minify certain files, link multiple files together or monitor whether a file has changed.
+
+#### Start scripts
+
+The start script ensures that everyone can view my project (developer or not) when he or she downloads this repo.
+
+`prestart` - This script is still executed before someone executes the script. Hence 'pre-script. With this script, the script npm run build is first called so that the dist folder is built.
+
+`start` - This script can be called by a non-developer to view the website locally. This script starts up a local server on the given port.
+
+#### Build scripts
+
+In my project I use a number of build scripts to build my dist map, minify my CSS & JS and link multiple files together.
+
+`build` - My build script automates four other build scripts (build:static, build:static:img, build:static:css & build:static:js). Namely building my static files.
+
+`build:static` - My build:static really just takes the manifest and service worker files and copies them to the 'dist' folder.
+
+`build:static:img`- Since I want to maintain a certain structure in my dist folder, I have written a separate build script for my images. This script only moves the images in the correct folder within the dist folder.
+
+`build:static:css` - My build:static:css script ensures that all my separate CSS files are linked together, the code is minified and stored in the folder styles within my dist folder.
+
+`build:static:js` - My build script build:static:js ensures that my separate javascript files are merged, the code is minified and these are stored in the folder js within the dist folder.
+
+#### Watch scripts
+
+In my project a watcher is used. This ensures that you as a developer do not have to keep an eye on whether a file has been modified or not. This is done automatically.
+
+`watch` - My watch script watch, uses the chokidar package to monitor all my static files for changes. When a change takes place, this script calls the other build script again.
+
+#### Dev scripts
+
+Finally, it is of course useful for the developer to have a script that keeps an eye on the server files.
+
+`dev` - This script uses the npm package nodemon, which ensures that all server files are monitored and updated when these files also change.
+
+### Manifest & Service Worker
+
+The aim of this project was to learn how to turn a website into a progressive web application. For example, it was of course the intention that this website can be seen as a real web application and that you can also view it offline. This is possible with a manifest and service worker.
+
+#### Manifest
+
+The `manifest.json` is a file necessary for a Progressive web application. This file provides information to the browser in which a description is given of the progressive web application.
+
+#### Service Worker
+
+The `service-worker.js` is a 'javascript' file that is run on a separate thread. I have put the 'javascript' in quotation marks because it works slightly differently than normal javascript files on the client. This separate thread is not connected to the browser itself (so it has no access to the DOM either) and actually runs in the background of the application.
+
+There are a number of life-cycle events that are performed in the service worker. The most important are: **install event** and **activate event**.In addition, there are other events such as checking fetch requests from and to the server, push notifications from a server to the browser, etc.
+
+**Install event**
+If a service worker can be used in the browser, the install event is the first event to occur. The service worker is installed here. This is also a good time to cache all pages that should also be accessible without internet.
+
+**Activate event**
+When the service worker is installed, it listens to new events, as it were. This is possible through the active event. For example, the old caches are removed first when a newer version of the service worker is installed.
+
+**Fetch event**
+In my project I also used the fetch event. This therefore checks all requests made by the browser (retrieving stylesheets, pages, etc.). This also checks if the page is already available in the cache & each visited page is dynamically stored in the cache. This ensures that if the network were to drop, certain pages would still be visible to the user. But when a page is not in the cache, this also ensures that an offline page can be displayed.
+
+### Performance
+
+To ensure that the application runs as fast as possible and is optimally optimized, it is important to make the optimization as good as possible. At the beginning, the performance of this web application was not that high in Lighthouse. The performance and how to improve this had not yet been considered. Looks like there is clearly room for some improvement:
+![Screenshot performance before](https://user-images.githubusercontent.com/35265583/113120625-15ef4100-9212-11eb-81f5-d47628d1054a.jpeg) ![Screenshot loading time before](https://user-images.githubusercontent.com/35265583/113123989-5a301080-9215-11eb-8eab-848565c114ac.jpeg)
+
+The performance was 82 out of 100. In addition, a number of other points were also not quite right: best practices can still be improved and the PWA check itself was not entirely correct.
+
+First I added the build scripts which, using the NPM package gulp, pasted the client side js and CSS files together and minified them. This has already resulted in an improvement in optimization.
+
+I also used the NPM compression package to compress all files. This ensures that the files are also reduced again and the optimization improved. Unfortunately the images from my database are already very small. This made it a bit pointless for me to downsize it. The optimization concerns the images are already as good as possible. I did give the images the fixed height and width, which also ensured better performance.
+
+![Screenshot performance after](https://user-images.githubusercontent.com/35265583/113124098-7633b200-9215-11eb-90fc-4d39cbcaaeea.png)
+![Screenshot loading time after](https://user-images.githubusercontent.com/35265583/113124056-6caa4a00-9215-11eb-932e-187f273f16ed.png)
 
 ## :link: API
 

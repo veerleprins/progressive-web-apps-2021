@@ -33,7 +33,7 @@
   color: white;
   background-color: var(--posters);
   text-decoration: none;
-  font-family: "Girassol", cursive;
+  font-family: "Inter", cursive;
 }
 
 .offline-page main div a:hover {

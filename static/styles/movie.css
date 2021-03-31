@@ -14,7 +14,7 @@
   top: 40px;
   left: 0;
   background-color: var(--posters);
-  font-family: "Girassol", cursive;
+  font-family: "Inter", cursive;
   text-decoration: none;
   color: var(--primary);
   font-size: 1.5em;
@@ -85,7 +85,7 @@
 }
 
 .movie-page section h3 {
-  font-family: "Girassol", cursive;
+  font-family: "Inter", cursive;
 }
 
 .movie-page section h2 {
