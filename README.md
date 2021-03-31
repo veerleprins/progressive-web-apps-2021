@@ -1,6 +1,6 @@
 ## HorrorInfo:
 
-<img width="800" alt="Mockup on Apple computer with screenshot of the application." src="https://user-images.githubusercontent.com/35265583/109638652-8db44800-7b4e-11eb-9b61-b6a4aa04974d.png">
+<img width="1658" alt="Screenshot 2021-03-31 at 11 52 11" src="https://user-images.githubusercontent.com/35265583/113126154-a54b2300-9217-11eb-8018-bbd1cd6115da.png">
 
 ## :black_nib: Short Description
 
