@@ -4,6 +4,7 @@
   "description": "Application for horror movie info",
   "main": "app.js",
   "scripts": {
+    "prestart": "npm run build",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "watch": "chokidar 'static/**/*.{js,css,png,svg}' -c 'npm run build'",
